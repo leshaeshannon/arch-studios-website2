@@ -1,0 +1,51 @@
+.sticker-nav {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 400px;
+    height: auto;
+    left: -78px;
+    top: -153px;
+    transform: rotate(90deg);
+    transform-origin: top left;
+    overflow: hidden;
+}
+
+.sticker-nav-line {
+    width: 130px;
+    height: 1px;
+    background-color: $light-grey;
+    margin-right: 48px;
+}
+
+.sticker-nav-para {
+    color: $light-grey;
+    font-family: 'Spartan';
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 15px;
+    text-align: left;
+}
+
+@media screen and (max-width: 1300px) {
+    .sticker-nav {
+        left: -161px;
+        top: -25px;
+        transform: rotate(0deg)
+    }
+    .sticker-nav-line {
+        width: 130px;
+        height: 1px;
+        background-color: $light-grey;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .sticker-nav {
+        display: none;
+    }
+}

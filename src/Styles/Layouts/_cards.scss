@@ -1,0 +1,301 @@
+.cards {
+    position: relative;
+    width: 100%;
+    height: 2336px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards#features-cards {
+    height: 560px;
+    flex-flow: row nowrap !important;
+}
+
+.card {
+    width: 350px;
+    height: 560px;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-size: cover;
+}
+
+#card-one, #card-two, #card-three {
+    justify-content: space-between !important;
+}
+
+.card:hover {
+    transform: translateY(-24px);
+    transition: all 0.3s ease-in-out;
+}
+
+.card::before {
+    content: '';
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient(180deg, rgba(255,255,255, 0.0) 0%), ( rgba(255,255,255, 0.0) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    background: linear-gradient(180deg, rgba(255,255,255, 0.0) 0%), ( rgba(255,255,255, 0.5) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+#card-one {
+    background-image: url(../../../assets/portfolio/desktop/image-del-sol.jpg);
+    background-position: center;
+}
+
+#card-two {
+    background-image: url(../../../assets/portfolio/desktop/image-228b.jpg);
+    background-position: bottom center;
+}
+
+#card-three {
+    background-image: url(../../../assets/portfolio/desktop/image-prototype.jpg);
+    background-position: right bottom;
+}
+
+.card:nth-child(1) {
+    background-image: url(/arch-studio-multi-page-website/assets/portfolio/desktop/image-seraph.jpg);
+    background-position: right;
+}
+
+.card:nth-child(2) {
+    background-image: url(../../../assets/portfolio/desktop/image-eebox.jpg);
+    background-position: right;
+}
+
+.card:nth-child(3) {
+    background-image: url(../../../assets/portfolio/desktop/image-federal.jpg);
+    background-position: bottom center;
+}
+
+.card:nth-child(4) {
+    background-image: url(../../../assets/portfolio/desktop/image-del-sol.jpg);
+    background-position: right;
+}
+
+.card:nth-child(5) {
+    background-image: url(../../../assets/portfolio/desktop/image-prototype.jpg);
+    background-position: right bottom;
+}
+
+.card:nth-child(6) {
+    background-image: url(../../../assets/portfolio/desktop/image-228b.jpg);
+    background-position: bottom center;
+}
+
+.card:nth-child(7) {
+    background-image: url(../../../assets/portfolio/desktop/image-edelweiss.jpg);
+    background-position: bottom center ;
+}
+
+.card:nth-child(8) {
+    background-image: url(../../../assets/portfolio/desktop/image-netcry.jpg);
+    background-position: bottom left;
+}
+
+.card:nth-child(9) {
+    background-image: url(../../../assets/portfolio/desktop/image-hypers.jpg);
+    background-position: right;
+}
+
+.card:nth-child(10) {
+    background-image: url(../../../assets/portfolio/desktop/image-sxiv.jpg);
+    background-position: center;
+}
+
+.card:nth-child(11) {
+    background-image: url(../../../assets/portfolio/desktop/image-trinity.jpg);
+    background-position: center;
+}
+
+.card:nth-child(12) {
+    background-image: url(../../../assets/portfolio/desktop/image-paramour.jpg);
+    background-position: center ;
+}
+
+.card-desc {
+    width: 224px;
+    height: 54px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    margin: 0px 0px 40px 40px;
+    text-shadow: 0px 0px 8px #000000;
+}
+
+.card-desc p:last-child {
+    opacity: 0.75;
+}
+
+@media screen and (max-width:1300px) {
+    .cards {
+        flex-flow: column wrap;
+        height: 3144px;
+    }
+    
+    .cards#features-cards {
+        height: 768px;
+        flex-flow: column nowrap !important;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 900px;
+        height: 240px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    #card-one, #card-two, #card-three {
+        justify-content: flex-end !important;
+    }
+    
+    .card:hover {
+        transform: translateY(-15px);
+    }
+    
+    .card::before {
+        content: '';
+        width: 100%;
+        height: 240px;
+    }
+    
+    #card-one {
+        background-image: url(../../../assets/portfolio/tablet/image-del-sol.jpg);
+        background-position: left;
+    }
+    
+    #card-two {
+        background-image: url(../../../assets/portfolio/tablet/image-228b.jpg);
+        background-position: center;
+    }
+    
+    #card-three {
+        background-image: url(../../../assets/portfolio/tablet/image-prototype.jpg);
+        background-position:  center;
+    }
+
+    .card:nth-child(1) {
+        background-image: url(../../../assets/portfolio/tablet/image-seraph.jpg);
+        background-position: bottom;
+    }
+    
+    .card:nth-child(2) {
+        background-image: url(../../../assets/portfolio/tablet/image-eebox.jpg);
+        background-position: right;
+    }
+    
+    .card:nth-child(3) {
+        background-image: url(../../../assets/portfolio/tablet/image-federal.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(4) {
+        background-image: url(../../../assets/portfolio/tablet/image-del-sol.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(5) {
+        background-image: url(../../../assets/portfolio/tablet/image-prototype.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(6) {
+        background-image: url(../../../assets/portfolio/tablet/image-228b.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(7) {
+        background-image: url(../../../assets/portfolio/tablet/image-edelweiss.jpg);
+        background-position: top ;
+    }
+    
+    .card:nth-child(8) {
+        background-image: url(../../../assets/portfolio/tablet/image-netcry.jpg);
+        background-position: bottom;
+    }
+    
+    .card:nth-child(9) {
+        background-image: url(../../../assets/portfolio/tablet/image-hypers.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(10) {
+        background-image: url(../../../assets/portfolio/tablet/image-sxiv.jpg);
+        background-position: center;
+    }
+    
+    .card:nth-child(11) {
+        background-image: url(../../../assets/portfolio/tablet/image-trinity.jpg);
+        background-position: top;
+    }
+    
+    .card:nth-child(12) {
+        background-image: url(../../../assets/portfolio/tablet/image-paramour.jpg);
+        background-position: top ;
+    }
+
+    .card-header {
+        font-size: 200px !important;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cards {
+        flex-flow: column wrap;
+        margin: auto;
+        width: 91.4666667%;
+        height: 3144px;
+    }
+    
+    .cards#features-cards {
+        height: 768px !important;
+        flex-flow: column nowrap !important;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 600px;
+        height: 240px;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    #card-one, #card-two, #card-three {
+        justify-content: flex-end !important;
+        max-width: unset;
+    }
+    
+    
+    #card-one {
+        background-image: url(../../../assets/portfolio/mobile/image-del-sol.jpg);
+        background-position: center;
+    }
+    
+    #card-two {
+        background-image: url(../../../assets/portfolio/mobile/image-228b.jpg);
+        background-position: top;
+    }
+    
+    #card-three {
+        background-image: url(../../../assets/portfolio/mobile/image-prototype.jpg);
+    }
+
+    .card-desc {
+        margin: 0px 0px 24px 24px;
+    }
+    
+}

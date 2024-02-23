@@ -1,0 +1,207 @@
+.hero-section {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-image {
+    width: 635px;
+    height: 720px;
+    background-image: url(/arch-studio-multi-page-website/assets/about/desktop/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-image#contact-hero-image {
+    background-image: url(/arch-studio-multi-page-website/assets/about/desktop/image-hero.jpg);
+}
+
+.hero-image::before {
+    content: '';
+    width: 635px;
+    height: 720px;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.hero-desc {
+    width: 475px;
+    height: 503px;
+    position: relative;
+    left: -153px;
+    z-index: 2;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.hero-desc h1 {
+    position: absolute;
+    right: -148px;
+    top: -101px;
+}
+
+.hero-desc-wrap-text {
+    width: 446px;
+    height: 343px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    position: relative;
+    right: -155px;
+    z-index: 3;
+}
+
+.hero-desc-wrap-text::before {
+    content: '';
+    width: 65px;
+    height: 1px;
+    background: $light-grey;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.hero-desc-wrap-text h2:first-child {
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1300px) {
+    .hero-image {
+        width: 100%;
+        background-image: url(/arch-studio-multi-page-website/assets/about/tablet/image-hero.jpg);
+    }
+
+    .hero-image#contact-hero-image {
+        background-image: url(/arch-studio-multi-page-website/assets/about/tablet/image-hero.jpg);
+    }
+    
+    .hero-image::before {
+        width: 100%;
+    }
+    
+    .hero-desc {
+        width: 623px;
+        height: 431px;
+        position: absolute;
+        left: unset;
+        right: 0px;
+        z-index: 2;
+        justify-content: center;
+    }
+    
+    .hero-desc h1 {
+        right: 160px;
+        top: -97px;
+    }
+    
+    .hero-desc-wrap-text {
+        width: 456px;
+        height: 342px;
+        right: 0px;
+        z-index: 3;
+    }
+    
+    .hero-desc-wrap-text::before {
+        top: 0px;
+        left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 550px;
+    }
+
+    .hero-image {
+        width: 100%;
+        background-image: url(../../../assets/about/mobile/image-hero.jpg);
+        height: 240px;
+    }
+
+    .hero-image#contact-hero-image {
+        background-image: url(../../../assets/contact/mobile/image-hero.jpg);
+    }
+
+    .hero-image::before {
+        width: 100%;
+        height: 240px;
+    }
+
+    .hero-image::after {
+        content: '';
+        width: 90.5%;
+        height: 45px;
+        position: absolute;
+        background: white;
+        z-index: 3;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .hero-desc {
+        width: 91.4666%;
+        height: 150px;
+        position: relative;
+        left: unset;
+        right: unset;
+        z-index: 2;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 35px auto 0px auto;
+    }
+
+    .hero-desc-wrap-text {
+        width: 100%;
+        height: 150px;
+        right: unset;
+        position: relative;
+        z-index: 3;
+        justify-content: flex-start;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .hero-desc-wrap-text::before {
+        display: none;
+        top: unset;
+        left: 0px;
+        bottom: 0px;
+    }
+
+    .hero-desc-wrap-text h2:first-child {
+        margin-bottom: 30px;
+        width: 270px;
+    }
+    
+}
+
+@media screen and (max-width: 531px) {
+    .hero-section {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 610px;
+    }
+
+    .hero-desc {
+        height: 311px;
+    }
+
+    .hero-desc-wrap-text {
+        height: 311px;
+    }
+}

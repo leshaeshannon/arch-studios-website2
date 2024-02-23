@@ -1,0 +1,23 @@
+// 1 - HELPERS
+@import './1-Helpers/mixins';
+@import './1-Helpers/variables';
+
+// 2 - BASICS
+@import './2-Basics/base';
+@import './2-Basics/buttons';
+@import './2-Basics/typography';
+
+// 3 - LAYOUT
+@import './3-Layout/banner-top-left';
+@import './3-Layout/cards';
+@import './3-Layout/footer';
+@import './3-Layout/hero';
+@import './3-Layout/main-container';
+@import './3-Layout/navbar';
+@import './3-Layout/slider';
+
+// 4 - PAGES
+@import './4-Pages/about';
+@import './4-Pages/contact';
+@import './4-Pages/home';
+@import './4-Pages/portfolio';

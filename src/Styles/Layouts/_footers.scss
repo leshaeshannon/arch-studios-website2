@@ -1,0 +1,146 @@
+footer {
+    margin: 200px auto 0px auto;
+    height: 200px;
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    overflow: visible;
+}
+
+.footer-logo {
+    width: 200px;
+    height: 200px;
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo img:first-child {
+    display: inline-block;
+}
+
+.footer-logo img:last-child {
+    display: none;
+}
+
+.footer-nav {
+    background-color: $very-light-grey;
+    display: flex;
+    align-items: center;
+    width: 784px;
+    height: 200px;
+}
+
+.footer-nav-list {
+    width: 315px;
+    height: 25px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 85px;
+}
+
+.footer-nav-list-item {
+    width: 75px;
+    height: 25px;
+    text-align: center;
+}
+
+.footer-nav-list-link {
+    color: $medium-grey;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-nav-list-link:hover {
+    color: $dark-blue;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-button {
+    position: absolute;
+    right: 0px;
+}
+
+@media screen and (max-width: 1300px) {
+    footer {
+        margin: 200px auto 0px auto;
+        height: 120px;
+        width: 100%;
+        max-width: 768px;
+    }
+    
+    .footer-logo {
+        width: 120px;
+        height: 120px;
+        background-color: $dark-blue;
+    }
+
+    .footer-logo img:first-child {
+        display: none;
+    }
+    
+    .footer-logo img:last-child {
+        display: inline-block;
+    }
+    
+    .footer-nav {
+        width: 492px;
+        height: 120px;
+    }
+    
+    .footer-nav-list {
+        margin-left: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        margin: 132px 0px 0px 0px;
+        height: 383px;
+        width: 100%;
+        max-width: unset;
+        justify-content: center;
+        flex-flow: column nowrap;
+        background-color: $very-light-grey;
+    }
+    
+    .footer-logo {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        position: relative;
+    }
+    
+    .footer-logo img:first-child {
+        display: none;
+    }
+    
+    .footer-logo img:last-child {
+        display: inline-block;
+    }
+    
+    .footer-nav {
+        width: 75px;
+        height: 139px;
+        bottom: 28px;
+        position: relative;
+    }
+    
+    .footer-nav-list {
+        width: 75px;
+        height: 139px;
+        flex-flow: column nowrap;
+        margin-left: 0px;
+    }
+    
+    .footer-button {
+        position: relative;
+        margin-bottom: 52px;
+    }
+}
