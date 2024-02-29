@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [leshaebriscoe-archstudio.netifly.com](leshaebriscoe-archstudio.netifly.com)
+- Live Site URL: [leshaebriscoe-arch-studio.netifly.com](leshaebriscoe-archstudio.netifly.com)
 
 ## My process
 
